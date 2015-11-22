@@ -42,16 +42,17 @@ let g:EasyMotion_startofline = 1 " keep cursor column when JK motion
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
-" let g:airline_powerline_fonts = 1 
+set guifont=Liberation_Mono_for_Powerline_Regular:h10
+let g:airline_powerline_fonts = 1
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
   endif
 
   " unicode symbols
   let g:airline_left_sep = '»'
-  let g:airline_left_sep = '▶'
+  let g:airline_left_sep = '|'
   let g:airline_right_sep = '«'
-  let g:airline_right_sep = '◀'
+  let g:airline_right_sep = '|'
   let g:airline_symbols.crypt = '🔒'
   let g:airline_symbols.linenr = '␊'
   let g:airline_symbols.linenr = '␤'
@@ -62,6 +63,16 @@ let g:airline#extensions#tabline#enabled = 1
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
 
+  " powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = ''
+
+
   set laststatus=2 " so that the status line is always showing
 
 colorscheme molokai
@@ -69,4 +80,6 @@ colorscheme molokai
 " NERDTree toggle
 map <C-n> :NERDTreeToggle<CR>
 
-
+" encoding
+set encoding=utf-8
+set fileencoding=utf-8
