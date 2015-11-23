@@ -83,3 +83,6 @@ map <C-n> :NERDTreeToggle<CR>
 " encoding
 set encoding=utf-8
 set fileencoding=utf-8
+
+" syntax coloring
+set syntax on
