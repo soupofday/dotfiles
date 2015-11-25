@@ -217,3 +217,10 @@ alias gpdia1='ssh harrisr@gpdia1'
 alias gpdia2='ssh harrisr@gpdia2'
 alias gpdia3='ssh harrisr@gpdia3'
 alias gpdia4='ssh harrisr@gpdia4'
+
+# the next alias is to be able to safely rsync new IDS zip file packets, without accidentally wiping out the 
+# freaking git repo in the process like an idiot.  It needs to be run from inside the IDS-DJT directory where you've 
+# unzipped the files to (i.e. you should see in the current directory the 'AS-SLPG', 'STAR-SLH' etc subdirectories).
+#
+# the command lists all directories and rsync's them to /cygdrive/x/Omni/, ignoring Thumbs.db.
+alias omni_copy='for b in `ls` ; do rsync --delete -a --exclude '*.Thumbs.db' ./$b/* /cygdrive/x/Omni/$b/; done'
