@@ -22,6 +22,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-markdown'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'krisajenkins/vim-pipe'
+Plugin 'dbext.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
