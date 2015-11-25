@@ -86,3 +86,6 @@ set fileencoding=utf-8
 
 " syntax coloring
 syntax on
+
+" get full 256 colors
+set t_Co=256
