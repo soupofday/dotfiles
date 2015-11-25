@@ -95,5 +95,5 @@ set t_Co=256
 " make backspace more normal
 set backspace=indent,eol,start
 
-" psql setup
-" autocmd FileType sql let b:vimpipe_command="psql mydatabase"
+" psql setup - read db connection stuff from another file
+source ~/.vimrc_db
