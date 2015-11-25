@@ -91,3 +91,9 @@ syntax on
 
 " get full 256 colors
 set t_Co=256
+
+" make backspace more normal
+set backspace=indent,eol,start
+
+" psql setup
+" autocmd FileType sql let b:vimpipe_command="psql mydatabase"
