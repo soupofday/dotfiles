@@ -224,3 +224,6 @@ alias gpdia4='ssh harrisr@gpdia4'
 #
 # the command lists all directories and rsync's them to /cygdrive/x/Omni/, ignoring Thumbs.db.
 alias omni_copy='for b in `ls` ; do rsync --delete -a --exclude '*.Thumbs.db' ./$b/* /cygdrive/x/Omni/$b/; done'
+
+" vi = vim
+alias vi='vim'
