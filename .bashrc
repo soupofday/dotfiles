@@ -202,7 +202,7 @@ alias pythonwin='/cygdrive/c/Python27/Lib/site-packages/pythonwin/Pythonwin.exe'
 alias python='/cygdrive/c/Python27/python.exe'
 alias cc='cat /dev/clipboard '
 alias wipe="echo '' > /dev/clipboard"
-alias Rproj='cd /cygdrive/c/Users/HARRISR/Documents/R_Projects'
+alias Rproj='cd /cygdrive/c/Users/HARRISR/Documents/R-Projects'
 alias RProj=Rproj
 alias rproj=Rproj
 alias sqlpy='python -c "import sys;import sqlparse;print sqlparse.format(sys.stdin.read(),reindent=True)"'
