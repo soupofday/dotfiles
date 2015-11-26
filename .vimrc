@@ -24,6 +24,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'krisajenkins/vim-pipe'
 Plugin 'dbext.vim'
+Plugin 'krisajenkins/vim-postgresql-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -97,3 +98,6 @@ set backspace=indent,eol,start
 
 " psql setup - read db connection stuff from another file
 source ~/.vimrc_db
+
+" for psql output formatting
+autocmd FileType sql let b:vimpipe_filetype="postgresql"
