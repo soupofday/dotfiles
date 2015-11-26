@@ -46,7 +46,6 @@ let g:EasyMotion_startofline = 1 " keep cursor column when JK motion
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
-set guifont=Liberation_Mono_for_Powerline_Regular:h10
 let g:airline_powerline_fonts = 1
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
