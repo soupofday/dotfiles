@@ -27,6 +27,7 @@ Plugin 'dbext.vim'
 Plugin 'krisajenkins/vim-postgresql-syntax'
 Plugin 'SQLComplete.vim'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'junegunn/goyo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
