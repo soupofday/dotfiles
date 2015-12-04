@@ -1,9 +1,9 @@
-# To the extent possible under law, the author(s) have dedicated all 
-# copyright and related and neighboring rights to this software to the 
-# public domain worldwide. This software is distributed without any warranty. 
-# You should have received a copy of the CC0 Public Domain Dedication along 
-# with this software. 
-# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
+# To the extent possible under law, the author(s) have dedicated all
+# copyright and related and neighboring rights to this software to the
+# public domain worldwide. This software is distributed without any warranty.
+# You should have received a copy of the CC0 Public Domain Dedication along
+# with this software.
+# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 # base-files version 4.1-1
 
@@ -132,13 +132,13 @@
 # Some example functions:
 #
 # a) function settitle
-# settitle () 
-# { 
-#   echo -ne "\e]2;$@\a\e]1;$@\a"; 
+# settitle ()
+# {
+#   echo -ne "\e]2;$@\a\e]1;$@\a";
 # }
-# 
+#
 # b) function cd_func
-# This function defines a 'cd' replacement function capable of keeping, 
+# This function defines a 'cd' replacement function capable of keeping,
 # displaying and accessing history of visited directories, up to 10 entries.
 # To use it, uncomment it, source this file and try 'cd --'.
 # acd_func 1.0.5, 10-nov-2004
@@ -147,15 +147,15 @@
 # {
 #   local x2 the_new_dir adir index
 #   local -i cnt
-# 
+#
 #   if [[ $1 ==  "--" ]]; then
 #     dirs -v
 #     return 0
 #   fi
-# 
+#
 #   the_new_dir=$1
 #   [[ -z $1 ]] && the_new_dir=$HOME
-# 
+#
 #   if [[ ${the_new_dir:0:1} == '-' ]]; then
 #     #
 #     # Extract dir N from dirs
@@ -165,21 +165,21 @@
 #     [[ -z $adir ]] && return 1
 #     the_new_dir=$adir
 #   fi
-# 
+#
 #   #
 #   # '~' has to be substituted by ${HOME}
 #   [[ ${the_new_dir:0:1} == '~' ]] && the_new_dir="${HOME}${the_new_dir:1}"
-# 
+#
 #   #
 #   # Now change to the new dir and add to the top of the stack
 #   pushd "${the_new_dir}" > /dev/null
 #   [[ $? -ne 0 ]] && return 1
 #   the_new_dir=$(pwd)
-# 
+#
 #   #
 #   # Trim down everything beyond 11th entry
 #   popd -n +11 2>/dev/null 1>/dev/null
-# 
+#
 #   #
 #   # Remove any other occurence of this dir, skipping the top of the stack
 #   for ((cnt=1; cnt <= 10; cnt++)); do
@@ -191,10 +191,10 @@
 #       cnt=cnt-1
 #     fi
 #   done
-# 
+#
 #   return 0
 # }
-# 
+#
 # alias cd=cd_func
 alias sqlFormat=~/sqlFormat.sh
 alias Docs='cd /cygdrive/c/Users/HARRISR/Documents'
@@ -218,8 +218,8 @@ alias gpdia2='ssh harrisr@gpdia2'
 alias gpdia3='ssh harrisr@gpdia3'
 alias gpdia4='ssh harrisr@gpdia4'
 
-# the next alias is to be able to safely rsync new IDS zip file packets, without accidentally wiping out the 
-# freaking git repo in the process like an idiot.  It needs to be run from inside the IDS-DJT directory where you've 
+# the next alias is to be able to safely rsync new IDS zip file packets, without accidentally wiping out the
+# freaking git repo in the process like an idiot.  It needs to be run from inside the IDS-DJT directory where you've
 # unzipped the files to (i.e. you should see in the current directory the 'AS-SLPG', 'STAR-SLH' etc subdirectories).
 #
 # the command lists all directories and rsync's them to /cygdrive/x/Omni/, ignoring Thumbs.db.
