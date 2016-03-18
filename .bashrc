@@ -211,6 +211,13 @@ alias collapse='sed "s:\(.*\):'"'"'\1'"'"':g" /dev/clipboard | tr "\n" "," | tee
 alias hc='head /dev/clipboard'
 function trim() { sed -e "s:^\s*\([^\s].*\)\s*:\1:g" $@;}
 function copy() { cat $1 > /dev/clipboard;}
+function redmine_format() {
+	if [ $# -gt 0 ]; then
+		sed -f ~/redmine_format.sed "$1"
+	else
+		sed -f ~/redmine_format.sed
+	fi
+}
 alias riles='cd /cygdrive/u/Riley/'
 alias Riles='riles'
 alias gpdia1='ssh harrisr@gpdia1'
