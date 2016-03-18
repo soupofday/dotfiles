@@ -32,6 +32,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'sjl/ansiesc.vim'
+Plugin 'chrisbra/csv.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
