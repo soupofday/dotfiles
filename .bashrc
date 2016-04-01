@@ -218,6 +218,7 @@ function redmine_format() {
 		sed -f ~/redmine_format.sed
 	fi
 }
+alias redmine_log='git diff --color | redmine_format | less -R'
 alias riles='cd /cygdrive/u/Riley/'
 alias Riles='riles'
 alias gpdia1='ssh harrisr@gpdia1'
